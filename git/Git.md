@@ -319,3 +319,27 @@
     * 在执行完commit后可以结束合并状态
 
 ![](picture/63.png)
+
+# 8. 与Github交互
+
+## 8.1 创建远程仓库
+
+![](picture/64.png)
+
+## 8.2 获得远程库地址
+
+![](picture/65.png)
+
+<br>
+
+### 8.2.1 地址本地保存
+
+* 地址一般很长，所以Git提供本地地址保存功能，通过别名保存
+
+* 查看别名:git remote -v
+
+![](picture/66.png)
+
+* 添加地址:git remote add 别名 地址
+
+![](picture/67.png)
