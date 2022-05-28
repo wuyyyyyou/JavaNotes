@@ -343,3 +343,23 @@
 * 添加地址:git remote add 别名 地址
 
 ![](picture/67.png)
+
+## 8.3 推送push操作
+
+* git push 推送地址 分支名称
+
+* 需要注意的一点是现在Gti使用https推送内容将不再支持用户名密码方式的身份验证，而是使用基于令牌的身份认证
+
+<br>
+
+### 8.4 创建令牌
+
+1. 进入设置页面
+
+![](picture/68.png)
+
+2. 左侧边栏单击`<>Developer settings`
+3. 在左侧边栏中，单击Personal access tokens
+4. 单击生成新令牌
+
+![](picture/69.png)
