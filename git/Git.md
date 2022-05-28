@@ -418,5 +418,82 @@
 ## 8.5 加入团队_push操作
 
 * 如果你clone下来别人的代码，修改后想要重新提交
+  * 会报错，因为要先加入团队才能进行push操作
 
 ![](picture/80.png)
+
+* 邀请他人加入项目(给某个项目添加合作者)
+
+![](picture/81.png)
+
+![](picture/82.png)
+
+* 被邀请者在进入该地址确认即可
+
+![](picture/83.png)
+
+* 此时被邀请者已经加入团队，可以成功push提交
+
+## 8.6 拉取修改后的远程库
+
+* pull操作相当与两个操作:
+  1. fetch拉取
+
+![](picture/84.png)
+
+  * 在执行抓取操作后，只是将远程库的内容下载到本地，但是工作区中的文件还是没有更新
+  * 可以切换到远程库区看看该分支的内容
+
+![](picture/85.png)
+
+  2. merge合并
+
+![](picture/86.png)
+
+* 直接使用pull操作:git pull 远程库地址 远程库分支
+
+![](picture/87.png)
+
+* 说明:
+  1. fetch + merge 操作:为了保险更加慎重
+  2. pull 操作:代码简单
+
+## 8.7 协同开发时冲突的解决方法
+
+* 情景模拟:
+  1. A本地创建项目x并push到github
+  2. B克隆项目x
+  3. B修改项目x中的文件Z
+  4. B将修改后的项目x提交并push到github
+  5. A在本地也修改了文件z也想push到github
+  6. 这时就会产生冲突A无法push
+
+* 解决方法:
+  1. A将此时的项目x从github上pull下来
+  2. 会进入7.2节讲的冲突合并状态
+  3. 修改冲突文件，留下需要的部分再次提交，结束冲突合并状态
+  4. 此时push将不会再报错
+
+## 8.8 fork以及pull request
+
+* fork相当于复制一份别人的库
+
+![](picture/88.png)
+
+* 在复制的库上进行修改后可以进行pull request操作
+
+![](picture/89.png)
+
+![](picture/90.png)
+
+![](picture/91.png)
+
+* 这样项目的原拥有者可以进行审核操作
+
+![](picture/92.png)
+
+![](picture/93.png)
+
+![](picture/94.png)
+
+![](picture/95.png)
