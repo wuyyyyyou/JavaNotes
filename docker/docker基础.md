@@ -49,3 +49,11 @@
    * 由于Docker Hub在国外，一遍使用阿里云仓库
 
 ![](picture/05.png)
+
+## 1.4 docker平台架构图
+
+![](picture/06.png)
+
+* docker是一个C-S结构的系统，docker守护进程运行在主机上，通过Socket链接从客户端访问，守护进程从客户端接受命令并管理运行在主机上的容器。可以对比Mysql
+
+![](picture/07.png)
