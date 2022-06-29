@@ -320,6 +320,12 @@
 
 ![](picture/63.png)
 
+## 7.3 更改分支名称
+
+* `git branch -m <old_name> <new_name>`
+
+![](picture/96.png)
+
 # 8. 与Github交互
 
 ## 8.1 创建远程仓库
