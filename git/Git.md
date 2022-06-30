@@ -192,6 +192,11 @@
 
 ![](picture/38.png)
 
+* 使文件不再被git管理(在git上删除文件但是本地文件不删)
+  * `git rm <文件名>`
+  * `git rm -f <文件夹名>` 
+
+
 ### 6.5.1 找回暂存区删除的文件
 
 * 删除工作区数据并同步到缓存区
@@ -323,6 +328,10 @@
 ## 7.3 更改分支名称
 
 * `git branch -m <old_name> <new_name>`
+
+## 7.4 删除分支
+
+* `git branch -d <branch_name>`
 
 ![](picture/96.png)
 
